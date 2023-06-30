@@ -1,15 +1,7 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.div`
   text-align: center;
-`;
-
-export const Logo = styled.img`
-  height: 40vmin;
-  pointer-events: none;
-  @media (prefersreducedmotion: no-preference) {
-    animation: ApplogoSpin infinite 20s linear;
-  }
 `;
 
 export const Header = styled.header`
@@ -23,15 +15,30 @@ export const Header = styled.header`
   color: white;
 `;
 
-export const Link = styled.a`
-  color: #61dafb;
-`;
-
-export const ApplogoSpin = styled.keyframes`
+export const ApplogoSpin = keyframes`
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+`;
+
+export const Logo = styled.img`
+  height: 40vmin;
+  pointer-events: none;
+  @media (prefers-reduced-motion: no-preference) {
+    animation: ${ApplogoSpin} infinite 20s linear;
   }
+`;
+
+export const Text = styled.p`
+  font-size: calc(10px + 2vmin);
+`;
+
+export const Code = styled.code`
+  font-size: calc(10px + 2vmin);
+`;
+
+export const Link = styled.a`
+  color: #61dafb;
 `;

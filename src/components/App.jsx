@@ -1,15 +1,14 @@
 import logo from '../assets/logo.svg';
-// import './App.css';
-import { Container, Logo, Header, Link } from './App.styled';
+import { Container, Header, Logo, Code, Text, Link } from './App.styled';
 
 export function App() {
   return (
     <Container>
       <Header>
         <Logo src={logo} alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Text>
+          Edit <Code>src/App.js</Code> and save to reload.
+        </Text>
         <Link
           href="https://reactjs.org"
           target="_blank"
