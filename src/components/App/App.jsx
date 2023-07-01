@@ -1,4 +1,4 @@
-import logo from '../assets/logo.svg';
+import logo from '../../assets/logo.svg';
 import { Container, Header, Logo, Code, Text, Link } from './App.styled';
 
 export function App() {
